@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def predict(X, w):
-    return X * w  # kompletter X-Vektor wird mit einem Wert w (Geradensteigung) multipliziert
+    return X * w 
 
 def loss(X, Y, w):
-    return np.average((predict(X, w) - Y) ** 2)  # Berechnung mittlerer quadratischer Fehler
+    return np.average((predict(X, w) - Y) ** 2)  # MSE
 
 def train(X, Y, iterations, lr):
     w = 0
@@ -21,7 +21,6 @@ def train(X, Y, iterations, lr):
         else:
             return w
     raise Exception("Couldn't converge within %d iterations" % iterations)
-
 
 sns.set()
 plt.axis([0, 300, 50, 65])
