@@ -1,4 +1,3 @@
-# Includes a bias
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -11,7 +10,7 @@ def loss(X, Y, w, b):
 
 def gradient(X, Y, w, b):
     w_gradient = (2 * np.average(X*(predict(X, w, b) - Y)))  # w Gradient of the Loss
-    b_gradient = (2 * np.average(predict(X, w, b) - Y))  # w Gradient of the Loss
+    b_gradient = (2 * np.average(predict(X, w, b) - Y))  # b Gradient of the Loss
     return (w_gradient, b_gradient)
 
 def train(X, Y, iterations, lr):
