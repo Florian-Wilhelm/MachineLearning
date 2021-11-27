@@ -36,7 +36,7 @@ plt.yticks(fontsize=12)
 plt.xlabel("24h cycle", fontsize=15)
 plt.ylabel("Moisture (%)", fontsize=15)
 
-X, Y = np.loadtxt("logfiles/moisture.txt", skiprows=0, unpack=True)
+X, Y = np.loadtxt("ML_data/moisture.txt", skiprows=0, unpack=True)
 
 w, b = train(X, Y, iterations=10000, lr=0.01)
 print("\nw=%.3f, b=%.3f" % (w, b))
