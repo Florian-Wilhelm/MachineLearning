@@ -1,4 +1,4 @@
-Time    Temperature   Moisture
+Time    Temperature(°C)   Moisture(%)
 12	9	59.9154433830785
 12	10	59.932110558387
 12	10	60.0571143732007
